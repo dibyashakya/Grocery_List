@@ -1,6 +1,6 @@
-import { createSingleItem } from "./single-item";
+import { createSingleItem } from "./single-item.js";
 
-export function createItem(itemsArray) {
+export function createItems(itemsArray) {
   const container = document.createElement("div");
   container.className = "items";
   itemsArray.forEach((items) => {

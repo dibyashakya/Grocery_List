@@ -6,7 +6,7 @@ export const groceryItems = [
   },
   {
     id: "2",
-    name: "RIce",
+    name: "Rice",
     completed: false,
   },
 ];
