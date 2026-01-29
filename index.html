@@ -8,10 +8,34 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="css/global.css" />
   </head>
   <body>
     <section class="section-center">
-      <div class="app"></div>
+      <div id="app">
+        <div class="items">
+          <div class="single-item">
+            <input type="checkbox" checked />
+            <p style="text-decoration: dashed">Milk</p>
+            <button class="btn icon-btn edit-btn" type="button">
+              <i class="fa-regular fa-pen-to-square"></i>
+            </button>
+            <button class="btn icon-btn remove-btn" type="button">
+              <i class="fa-regular fa-trash-can"></i>
+            </button>
+          </div>
+          <div class="single-item">
+            <input type="checkbox" />
+            <p style="text-decoration: none">Rice</p>
+            <button class="btn icon-btn edit-btn" type="button">
+              <i class="fa-regular fa-pen-to-square"></i>
+            </button>
+            <button class="btn icon-btn remove-btn" type="button">
+              <i class="fa-regular fa-trash-can"></i>
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
