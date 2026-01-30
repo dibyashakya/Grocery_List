@@ -34,6 +34,8 @@ form h2 {
   border-bottom-right-radius: 0.5rem;
   padding: 0.35rem 0.35rem;
   text-transform: capitalize;
+  font-size: 15px;
+  font-family: "Quicksand", system-ui, sans-serif;
 }
 
 .form-control .btn:hover {

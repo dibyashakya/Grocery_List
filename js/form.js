@@ -3,10 +3,10 @@ import { addItem, updateItemName } from "./app.js";
 export function createForm(editId, itemToEdit) {
   const form = document.createElement("form");
 
-  form.innerHTML = `<h2>Grocery Bud</h2>
+  form.innerHTML = `<h2>grocery list</h2>
           <div class="form-control">
             <input type="text" class="form-input" placeholder="Egg" value="${itemToEdit ? itemToEdit.name : ""}"/>
-            <button type="submit" class="btn">${editId ? "edit item" : "Add"}</button>
+            <button type="submit" class="btn">${editId ? "edit " : "Add "}</button>
           </div>`;
   form.addEventListener("submit", (e) => {
     e.preventDefault();
