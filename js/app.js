@@ -1,15 +1,34 @@
 import { createItems } from "./items.js";
 import { groceryItems } from "./data.js";
+import { createForm } from "./form.js";
 
 let items = groceryItems;
 function render() {
   const app = document.getElementById("app");
   app.innerHTML = "";
 
+  const formElement = createForm();
   const itemsElement = createItems(items);
+
+  app.appendChild(formElement);
   app.appendChild(itemsElement);
 }
 render();
+
+function generateId() {
+  return Date.now().toString(36) + Math.random().toString(36).substring(2);
+}
+
+export function addItem(itemName) {
+  const newItem = {
+    name: itemName,
+    completed: false,
+    id: generateId(),
+  };
+  items = [...items, newItem];
+  render();
+  setTimeout(() => alert("Item Added", 0));
+}
 
 export function editCompleted(itemId) {
   items = items.map((item) => {
