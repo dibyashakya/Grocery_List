@@ -7,11 +7,12 @@
 }
 
 body {
-  background: #65c8dc;
+  background: #f8fafc;
   font-family: "Quicksand", system-ui, sans-serif;
   font-weight: 100;
   line-height: 1.2;
   color: #2a2f33;
+  font-size: large;
 }
 
 .section-center {
@@ -22,5 +23,5 @@ body {
   border: solid #ffffff;
   position: relative;
   padding: 2rem;
-  background: #f8fafc;
+  background: #8eddea;
 }
