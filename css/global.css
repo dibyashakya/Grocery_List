@@ -16,9 +16,10 @@ body {
 
 .section-center {
   margin: 0 auto;
-  margin-top: 15rem;
+  margin-top: 10rem;
   max-width: 30rem;
   border-radius: 15px;
+  border: solid #658ddc;
   position: relative;
   padding: 2rem;
   background: #f8fafc;
