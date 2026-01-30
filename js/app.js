@@ -46,7 +46,7 @@ export function addItem(itemName) {
 
   setLocalStorage(items);
   render();
-  setTimeout(() => alert("Item Added", 0));
+  setTimeout(() => alert("Added to your list ", 0));
 }
 
 export function updateItemName(newName) {
@@ -59,7 +59,7 @@ export function updateItemName(newName) {
   editId = null;
   setLocalStorage(items);
   render();
-  setTimeout(() => alert("Name Reset"), 0);
+  setTimeout(() => alert("Changes saved"), 0);
 }
 
 export function setEditId(itemId) {
@@ -89,5 +89,5 @@ export function removeItem(itemId) {
   items = items.filter((item) => item.id !== itemId);
   setLocalStorage(items);
   render();
-  setTimeout(() => alert("Item Deleted Successfully", 0));
+  setTimeout(() => alert("Deleted from your list", 0));
 }

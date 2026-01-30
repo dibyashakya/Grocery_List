@@ -5,7 +5,7 @@ export function createForm(editId, itemToEdit) {
 
   form.innerHTML = `<h2>Grocery Bud</h2>
           <div class="form-control">
-            <input type="text" class="form-input" placeholder="eg,Egg" value="${itemToEdit ? itemToEdit.name : ""}"/>
+            <input type="text" class="form-input" placeholder="Egg" value="${itemToEdit ? itemToEdit.name : ""}"/>
             <button type="submit" class="btn">${editId ? "edit item" : "Add"}</button>
           </div>`;
   form.addEventListener("submit", (e) => {

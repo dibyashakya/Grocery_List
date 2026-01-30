@@ -1,8 +1,10 @@
 form h2 {
   text-align: center;
   margin-bottom: 1.5rem;
-  text-transform: capitalize;
-  font-weight: normal;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.08rem;
 }
 
 .form-control {
@@ -15,22 +17,22 @@ form h2 {
   padding: 0.5rem 0.5rem;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
-  border-radius: 1px;
-  border: solid black;
+  border: solid #e5e7eb;
+  font-size: 14px;
 }
 
 .form-input::placeholder {
-  color: antiquewhite;
+  color: rgb(202, 211, 221);
 }
 
 .form-control .btn {
   cursor: pointer;
-  color: #fff;
-  background: cyan;
-  border-radius: 1px;
+  color: #ffffff;
+  background: #5fc1d6;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-top-right-radius: 0.5rem;
-  break-before: 0.5rem;
-  padding: 0.5rem 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 0.35rem 0.35rem;
   text-transform: capitalize;
 }
 
